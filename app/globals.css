@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-100
+}
+
+.triangle-up-arrow {
+   width: 0px;
+   height: 0px;
+   border-style: solid;
+   border-width: 0 6px 12px 6px;
+   border-color: transparent transparent #888 transparent;
+   transform: rotate(0deg);
+}
+
+.text-white > .triangle-up-arrow {
+    border-color: transparent transparent #fff transparent;
+} 
