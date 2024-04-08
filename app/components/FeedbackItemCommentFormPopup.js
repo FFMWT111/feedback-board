@@ -53,7 +53,7 @@ export default function CommentForm({ feedbackId, onPost }) {
           <div className="text-sm text-gray-600 mb-2 mt-3">Files:</div>
           <div className="flex gap-3">
             {uploads.map((link, index) => (
-              <div key={index._id}>
+              <div key={link._id}>
                 <Attachment
                   link={link}
                   showDeleteIcon={true}

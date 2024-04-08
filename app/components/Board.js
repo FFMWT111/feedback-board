@@ -225,7 +225,7 @@ export default function Board() {
         )}
         {feedbacks.map((feedback, index) => (
           <FeedbackItem
-            key={index._id}
+            key={feedback._id}
             title={feedback.title}
             description={feedback.description}
             _id={feedback._id}

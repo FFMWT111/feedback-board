@@ -114,8 +114,8 @@ export default function FeedbackItemPopup({
             <div className="flex gap-2 mt-1">
               {(isEditMode ? newUploads : uploads).map((link, index) => (
                 <Attachment
-                  key={index._id}
-                  link={link}
+                  key={link._id}
+                  // link={link}
                   showRemoveButton={isEditMode}
                   handleRemoveFile={handleRemoveFile}
                 />

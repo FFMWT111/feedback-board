@@ -89,7 +89,7 @@ export default function FeedbackItemCommentsPopup({ feedbackId }) {
                     {(edittingThings ? newCommentUploads : comment.uploads).map(
                       (link, index) => (
                         <Attachment
-                          key={index._id}
+                          key={link._id}
                           link={link}
                           handleRemoveFileButton={handleRemoveFileButton}
                           showRemoveButton={

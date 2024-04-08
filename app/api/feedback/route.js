@@ -70,7 +70,6 @@ export async function GET(request) {
           limit: 20,
         }
       );
-      console.log(comments, "1111111111111111111111111111111");
       filter = {
         $or: [
           { title: { $regex: ".*" + searchPhrase + ".*" } },

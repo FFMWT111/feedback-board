@@ -66,6 +66,7 @@ export default function FeedbakcModal({ setShow, onCreate }) {
               <div className="flex items-center gap-3">
                 {uploads.map((link) => [
                   <Attachment
+                    key={link._id}
                     link={link}
                     showDeleteIcon={true}
                     handleRemoveFile={(e, link) => handleRemoveFile(e, link)}

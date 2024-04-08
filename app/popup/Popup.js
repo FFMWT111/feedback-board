@@ -19,12 +19,12 @@ export default function Popup({ setShow, children, title, narrow }) {
       >
         <XMarkIcon className="h-6 w-6" />
       </button>
-      <div className="w-full h-full overflow-y-scroll">
+      <div className="w-full h-full">
         <div
           onClick={(e) => e.stopPropagation()}
           className={
             (narrow ? "md:max-w-sm " : "md:max-w-2xl ") +
-            "bg-white md:my-8 md:mx-auto md:rounded-lg overflow-hidden"
+            "bg-white md:my-8 md:mx-auto md:rounded-lg overflow-hidden overflow-y-scroll max-h-[720px] -z-1"
           }
         >
           <div className="relative min-h-[40px] md:min-h-0">
